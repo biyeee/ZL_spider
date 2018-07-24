@@ -11,6 +11,8 @@ import scrapy
 class ZhilianItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    createDate = scrapy.Field()  # 创建时间
+    jobName = scrapy.Field()  # 工作名称
     eduLevel = scrapy.Field()  # 学历
     company = scrapy.Field()  # 公司名称
     salary = scrapy.Field()  # 薪资

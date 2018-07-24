@@ -32,5 +32,5 @@ class MongoPipeline(object):
         self.client.close()
 
     def process_item(self, item, spider):
-        self.db[self.collection_name].update({'company': item['company']}, dict(item), True)  # 去重
+        self.db[self.collection_name].update({'createDate': item['createDate']}, dict(item), True)  # 去重
         return item
